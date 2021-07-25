@@ -1,0 +1,37 @@
+.Menu {
+  background: #252525;
+  padding: 20px 0;
+
+  .Container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .Container::before, .Container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &-logo {
+    display: block;
+    float: left;
+    padding: 10px;
+  }
+
+  &-nav {
+    float: right;
+    padding: 10px;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      font-size: 1.125em;
+    }
+  }
+}

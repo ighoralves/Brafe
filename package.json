@@ -1,0 +1,16 @@
+{
+  "name": "bootcamp-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.36.0"
+  },
+  "scripts": {
+    "dev": "parcel watch ./assets/styles/index.scss --public-url ./ ",
+    "build": "parcel build <your entry file>"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

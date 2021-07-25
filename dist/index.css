@@ -1,0 +1,47 @@
+body, h1, h2, h3, p, ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Poppins, Georgia, "Times New Roman", Times, serif;
+  color: #252525;
+}
+
+.Menu {
+  background: #252525;
+  padding: 20px 0;
+}
+.Menu .Container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.Menu .Container::before, .Menu .Container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.Menu-logo {
+  display: block;
+  float: left;
+  padding: 10px;
+}
+.Menu-nav {
+  float: right;
+  padding: 10px;
+}
+.Menu-nav li {
+  display: inline-block;
+}
+.Menu-nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.125em;
+}
+
+/*# sourceMappingURL=index.css.map */

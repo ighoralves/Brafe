@@ -28,11 +28,11 @@ body {
 .Menu-logo {
   display: block;
   float: left;
-  padding: 10px;
+  margin-left: 10px;
 }
 .Menu-nav {
   float: right;
-  padding: 10px;
+  margin-right: 10px;
 }
 .Menu-nav li {
   display: inline-block;
@@ -41,6 +41,30 @@ body {
   display: block;
   padding: 10px;
   color: #fff;
+  font-size: 1.125em;
+}
+
+.Intro {
+  background: url("bg-intro.567c7d3a.jpg") no-repeat;
+  background: cover;
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
+}
+.Intro h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+.Intro h1:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 4px;
+  color: #fff;
+  margin: 10px auto;
+}
+.Intro p {
+  font-style: italic;
   font-size: 1.125em;
 }
 

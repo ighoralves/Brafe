@@ -3,14 +3,14 @@
   padding: 20px 0;
 
   .Container {
-    max-width: 960px;
     margin: 0 auto;
+    max-width: 960px;
   }
   
   .Container::before, .Container::after {
     content: "";
-    display: table;
     clear: both;
+    display: table;
   }
 
   &-logo {
@@ -28,10 +28,10 @@
     }
 
     a {
-      display: block;
-      padding: 10px;
       color: #fff;
+      display: block;
       font-size: 1.125em;
+      padding: 10px;
     }
   }
 }

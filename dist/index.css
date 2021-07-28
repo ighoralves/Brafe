@@ -12,18 +12,22 @@ body {
   color: #252525;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .Menu {
   background: #252525;
   padding: 20px 0;
 }
 .Menu .Container {
-  max-width: 960px;
   margin: 0 auto;
+  max-width: 960px;
 }
 .Menu .Container::before, .Menu .Container::after {
   content: "";
-  display: table;
   clear: both;
+  display: table;
 }
 .Menu-logo {
   display: block;
@@ -38,82 +42,267 @@ body {
   display: inline-block;
 }
 .Menu-nav a {
-  display: block;
-  padding: 10px;
   color: #fff;
+  display: block;
   font-size: 1.125em;
+  padding: 10px;
 }
 
 .Intro {
   background: url("bg-intro.567c7d3a.jpg") no-repeat;
   background: cover;
+  color: #fff;
   padding: 150px 0;
   text-align: center;
-  color: #fff;
 }
 .Intro h1 {
-  text-transform: uppercase;
   font-size: 3em;
+  text-transform: uppercase;
 }
 .Intro h1:after {
+  color: #fff;
   content: "";
   display: block;
-  width: 20px;
   height: 4px;
-  color: #fff;
   margin: 10px auto;
+  width: 20px;
 }
 .Intro p {
-  font-style: italic;
   font-size: 1.125em;
+  font-style: italic;
 }
 
 .Sobre {
   padding: 40px;
 }
 .Sobre .Container {
-  max-width: 960px;
   margin: 0 auto;
+  max-width: 960px;
 }
 .Sobre .Container::after, .Sobre .Container::before {
   content: "";
-  display: table;
   clear: both;
+  display: table;
 }
 .Sobre h2 {
-  text-align: center;
   font-size: 2.25em;
   margin-bottom: 60px;
+  text-align: center;
 }
 .Sobre-item {
-  width: 460px;
   float: left;
   padding: 0 10px;
+  width: 460px;
 }
 .Sobre-item img {
   display: block;
   max-width: 100%;
 }
 .Sobre-item h3 {
-  font-size: 2.25em;
-  line-height: 1em;
   background: #252525;
-  width: 220px;
   color: #fff;
+  font-size: 2.25em;
   font-style: italic;
   font-weight: normal;
-  text-align: center;
+  line-height: 1em;
   padding: 5px 0 10px 0;
-  top: -25px;
   position: relative;
+  text-align: center;
+  top: -25px;
+  width: 220px;
 }
 .Sobre p {
   font-size: 1.125em;
-  line-height: 1.4em;
   font-style: italic;
-  text-align: center;
   margin: 29px auto;
   max-width: 460px;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.Produtos {
+  background: #e7e4d8;
+  border-bottom: 3px solid #d6d3c8;
+  border-top: 3px solid #d6d3c8;
+  padding: 60px 0;
+}
+.Produtos .Container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.Produtos .Container::before, .Produtos .Container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.Produtos .Produtos-itens {
+  float: left;
+  margin: 0 10px 20px 10px;
+  width: 300px;
+}
+.Produtos .Produtos-itens h2::before {
+  background: currentColor;
+  border: 5px solid #e7e4d8;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px currentColor;
+  content: "";
+  display: block;
+  height: 100px;
+  margin: 20px auto;
+  width: 100px;
+}
+.Produtos .Produtos-itens h2.Paulista::before {
+  color: #492901;
+}
+.Produtos .Produtos-itens h2.Carioca::before {
+  color: #c17139;
+}
+.Produtos .Produtos-itens h2.Mineiro::before {
+  color: #d7a54d;
+}
+.Produtos .Produtos-itens h2 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.Produtos .Produtos-itens p {
+  font-size: 0.875em;
+  line-height: 1.4em;
+}
+.Produtos .Produtos-btn {
+  border: 3px solid;
+  color: #252525;
+  display: block;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin: 20px auto 0 auto;
+  width: 180px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.Locais {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px 0;
+}
+.Locais-card {
+  margin: 60px auto;
+}
+.Locais-card::before, .Locais-card::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.Locais-card img {
+  display: block;
+  float: left;
+  margin: 0 10px;
+  width: 460px;
+}
+.Locais-card div {
+  float: left;
+  margin: 0 10px;
+  width: 460px;
+}
+.Locais-card h2 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+.Locais-card p {
+  font-size: 1.125em;
+  line-height: 1.4em;
+  margin-bottom: 40px;
+  max-width: 360px;
+}
+.Locais-card a {
+  border: 3px solid;
+  color: #252525;
+  font-size: 1.125em;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.Assine {
+  background: #e7e4d8;
+  padding: 30px 0;
+}
+.Assine .Container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.Assine .Container::before, .Assine .Container::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.Assine-info {
+  float: left;
+  margin: 0 10px;
+  width: 460px;
+}
+.Assine-info h2 {
+  font-size: 2.25em;
+}
+.Assine-info p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+.Assine form {
+  float: left;
+  margin: 10px 10px 0 10px;
+  width: 460px;
+}
+.Assine form label {
+  display: none;
+}
+.Assine form input {
+  background: none;
+  border: 3px solid #252525;
+  float: left;
+  font-family: Poppins, serif;
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 10px;
+  width: 320px;
+}
+.Assine form button {
+  background: #252525;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: Poppins, serif;
+  font-size: 1.5em;
+  padding: 13px 0;
+  text-transform: uppercase;
+  width: 140px;
+}
+
+.Footer {
+  background: #d6d3c8;
+  padding: 40px;
+}
+.Footer .Container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.Footer .Container::before, .Footer .Container::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.Footer p {
+  font-size: 1.125em;
+  float: left;
+  margin: 0 10px;
+  line-height: 1.4em;
+}
+.Footer img {
+  display: block;
+  float: right;
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

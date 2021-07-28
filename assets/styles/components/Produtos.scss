@@ -1,0 +1,72 @@
+.Produtos {
+  background: #e7e4d8;
+  border-bottom: 3px solid #d6d3c8;
+  border-top: 3px solid #d6d3c8;
+  padding: 60px 0;
+
+  .Container {
+    margin: 0 auto;
+    max-width: 960px;
+
+    &::before, &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+  .Produtos-itens {
+    float: left;
+    margin: 0 10px 20px 10px;
+    width: 300px;
+
+    h2::before {
+      background: currentColor;
+      border: 5px solid #e7e4d8;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px currentColor;
+      content: "";
+      display: block;
+      height: 100px;
+      margin: 20px auto;
+      width: 100px;
+    }
+
+    h2.Paulista::before {
+      color: #492901;
+    }
+
+    h2.Carioca::before {
+      color: #c17139;
+    }
+
+    h2.Mineiro::before {
+      color: #d7a54d;
+    }
+
+    h2 {
+      font-size: 2.25em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 0.875em;
+      line-height: 1.4em;
+    }
+  }
+
+  .Produtos-btn {
+    border: 3px solid;
+    color: #252525;
+    display: block;
+    font-size: 1.125em;
+    font-weight: bold;
+    margin: 20px auto 0 auto;
+    width: 180px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

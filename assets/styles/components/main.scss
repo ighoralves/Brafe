@@ -1,27 +1,27 @@
 .Intro {
   background: url("../img/bg-intro.jpg") no-repeat;
   background: cover;
+  color: #fff;
   padding: 150px 0;
   text-align: center;
-  color: #fff;
 
   h1 {
-    text-transform: uppercase;
     font-size: 3em;
+    text-transform: uppercase;
     
     &:after {
+      color: #fff;
       content: "";
       display: block;
-      width: 20px;
       height: 4px;
-      color: #fff;
       margin: 10px auto;
+      width: 20px;
     }
   }
 
   p {
-    font-style: italic;
     font-size: 1.125em;
+    font-style: italic;
   }
 
 }
